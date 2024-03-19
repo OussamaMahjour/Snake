@@ -37,9 +37,18 @@
     width: calc(90% + 12px);
     cursor: pointer;
     transition: .4s;
+    opacity: 0.7;
+}
+@media (max-width:520px) {
+    .snake-menu {
+        padding-left: 0;
+    }
 }
 .snake-menu li:hover{
 transform: translateY(8px);
+}
+.snake-menu li.active {
+    opacity: 1;
 }
 .snake-menu li a{
     color: black;
